@@ -1,8 +1,7 @@
 import { loadConfigs } from "../service/configService";
-import { submissionListener } from "./submission";
+import { registerSubmissionListeners } from "./submission";
 
 console.log(`Hello PMCA!`);
 
 await loadConfigs();
-document.addEventListener('click', submissionListener);
-
+registerSubmissionListeners();

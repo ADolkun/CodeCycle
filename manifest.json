@@ -10,9 +10,9 @@
     "open_in_tab": false
   },
   "icons": {
-    "128": "assets/logo.png",
+    "16": "assets/logo.png",
     "48": "assets/logo.png",
-    "16": "assets/logo.png"
+    "128": "assets/logo.png"
   },
   "action": {
     "default_icon": "assets/logo.png",
