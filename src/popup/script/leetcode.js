@@ -1,8 +1,18 @@
 import { loadConfigs } from "../service/configService";
-import { submissionListener } from "./submission";
+import { registerSubmissionListeners } from "./submission";
 
-console.log(`Hello PMCA!`);
+console.log("Initializing PMCA...");
 
-await loadConfigs();
-document.addEventListener('click', submissionListener);
+// Wait for DOM to be ready
+const initialize = async () => {
+  await loadConfigs();
+  registerSubmissionListeners();
+  console.log("PMCA initialized!");
+};
 
+// Run initialization when DOM is loaded
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initialize);
+} else {
+  initialize();
+}

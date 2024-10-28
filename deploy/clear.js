@@ -1,13 +1,13 @@
-const fs = require('fs');
+const fs = require("fs");
 
 function deleteFolder(folderPath) {
-  fs.rm(folderPath, { recursive: true, force: true }, (err) => {
+  fs.rmdir(folderPath, { recursive: true, force: true }, (err) => {
     if (err) {
       console.error(`Error deleting folder: ${err}`);
       return;
     }
-    console.log('Folder deleted successfully');
+    console.log("Folder deleted successfully");
   });
 }
 
-deleteFolder('pmca');
+deleteFolder("pmca");

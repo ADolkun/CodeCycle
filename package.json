@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "node_modules/.bin/webpack",
     "manifest:dev": "cross-env NODE_ENV=dev node ./deploy/generate-manifest.js",
     "manifest:prod": "cross-env NODE_ENV=prod node ./deploy/generate-manifest.js",
     "release:dev": "npm run build && npm run manifest:dev && node ./deploy/zip.js",
@@ -32,11 +32,11 @@
     "archiver": "^6.0.1",
     "css-loader": "^6.8.1",
     "jszip": "^3.10.1",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "style-loader": "^3.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }
