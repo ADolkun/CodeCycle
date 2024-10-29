@@ -62,6 +62,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   importInput.addEventListener("change", async (e) => {
     if (e.target.files.length === 0) return;
 
+    const confirmed = confirm(
+      "Importing will override your current progress. Are you sure you want to continue?" +
+        "\n\nTip: You might want to export your current progress first as backup."
+    );
+
+    if (!confirmed) {
+      e.target.value = "";
+      return;
+    }
+
     try {
       await importProgress(e.target.files[0]);
       optionPageFeedbackMsgDOM.textContent = "Import successful!";
