@@ -27,13 +27,21 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/*"],
-      "js": ["dist/leetcode.js"],
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+      "js": [
+        "dist/leetcode.js"
+      ],
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://leetcode.cn/*"],
-      "js": ["dist/leetcodecn.js"],
+      "matches": [
+        "https://leetcode.cn/*"
+      ],
+      "js": [
+        "dist/leetcodecn.js"
+      ],
       "run_at": "document_idle"
     }
   ]

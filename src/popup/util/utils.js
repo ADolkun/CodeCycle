@@ -17,14 +17,26 @@ import {
   forggettingCurve,
 } from "./constants";
 
+export const stripTime = (timestamp) => {
+  const date = new Date(timestamp);
+  date.setHours(0, 0, 0, 0);
+  return date.getTime();
+};
+
 export const needReview = (problem) => {
   if (problem.proficiency >= forggettingCurve.length) {
     return false;
   }
 
-  const currentTime = Date.now();
-  const timeDiffInMinute = (currentTime - problem.submissionTime) / (1000 * 60);
-  return timeDiffInMinute >= forggettingCurve[problem.proficiency];
+  const currentDate = stripTime(Date.now());
+  const submissionDate = stripTime(problem.submissionTime);
+  const reviewIntervalInDays =
+    forggettingCurve[problem.proficiency] / (24 * 60);
+  const reviewDate = stripTime(
+    submissionDate + reviewIntervalInDays * 24 * 60 * 60 * 1000
+  );
+
+  return currentDate >= reviewDate;
 };
 
 export const scheduledReview = (problem) => {

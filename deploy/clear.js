@@ -1,13 +1,12 @@
 const fs = require("fs");
 
 function deleteFolder(folderPath) {
-  fs.rmdir(folderPath, { recursive: true, force: true }, (err) => {
-    if (err) {
-      console.error(`Error deleting folder: ${err}`);
-      return;
-    }
+  if (fs.existsSync(folderPath)) {
+    fs.rmdirSync(folderPath, { recursive: true });
     console.log("Folder deleted successfully");
-  });
+  } else {
+    console.log("Folder does not exist, skipping deletion");
+  }
 }
 
 deleteFolder("pmca");
