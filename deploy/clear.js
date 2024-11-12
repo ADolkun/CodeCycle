@@ -9,4 +9,4 @@ function deleteFolder(folderPath) {
   }
 }
 
-deleteFolder("pmca");
+deleteFolder("codecycle");

@@ -1,8 +1,19 @@
 # Changelog
 
-All notable changes to PMCA will be documented in this file.
+All notable changes to CodeCycle will be documented in this file.
 
-## [0.9.9.1] - 2024-03-28
+## [0.9.9.5] - 2024-11-11
+
+### Changed
+
+- UI makeover & UX improvements
+  - Remade the entire UI to a more modern and light version
+  - Improved table layout with optimized column widths
+  - Enhanced problem name display with hover effect
+  - Adjusted footer layout for better spacing
+- Reorganized CSS code structure
+
+## [0.9.9.1] - 2024-10-28
 
 ### Added
 
@@ -20,7 +31,7 @@ All notable changes to PMCA will be documented in this file.
 - Updated UI with new import/export buttons in options page
 - Improved error handling and user feedback for import/export operations
 
-## [0.9.9] - 2024-03-27
+## [0.9.9] - 2024-10-26
 
 ### Added
 

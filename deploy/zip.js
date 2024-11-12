@@ -1,16 +1,16 @@
-const fs = require('fs');
-const path = require('path');
-const archiver = require('archiver');
+const fs = require("fs");
+const path = require("path");
+const archiver = require("archiver");
 
 function zipFoldersAndFiles(folders, files, targetZip) {
   const output = fs.createWriteStream(targetZip);
-  const archive = archiver('zip');
+  const archive = archiver("zip");
 
-  output.on('close', () => {
-    console.log('zip success');
+  output.on("close", () => {
+    console.log("zip success");
   });
 
-  archive.on('error', (err) => {
+  archive.on("error", (err) => {
     throw err;
   });
 
@@ -48,14 +48,14 @@ function zipFoldersAndFiles(folders, files, targetZip) {
   archive.finalize();
 }
 
-const foldersToZip = ['dist', 'assets', 'lib'];
+const foldersToZip = ["dist", "assets", "lib"];
 const filesToZip = [
-    'popup.html',
-    'options.html',
-    'LICENSE',
-    'manifest.json',
-    'PRIVACY POLICY.md',
-    'README.md'
+  "popup.html",
+  "options.html",
+  "LICENSE",
+  "manifest.json",
+  "PRIVACY POLICY.md",
+  "README.md",
 ];
 
-zipFoldersAndFiles(foldersToZip, filesToZip, 'pmca.zip');
+zipFoldersAndFiles(foldersToZip, filesToZip, "codecycle.zip");
