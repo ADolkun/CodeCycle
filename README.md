@@ -11,7 +11,7 @@
 
 <div align="center">
   <a href="https://chrome.google.com/webstore/detail/codecycle/lmjangoiaeocnlehffdlidjockaohhjj">
-    <img align="center" src="https://github.com/ADolkun/CodeCycle/assets/90407167/89482e5f-d9f4-4d30-8bd5-bbe291670dd1" />
+    <img align="center" src="assets/chrome-store.png" />
   </a>
 </div>
 <div align="center">
@@ -20,10 +20,13 @@
 
 <br>
 
+<div align="center">
+
 [![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/ADolkun/CodeCycle/blob/main/LICENSE)
 [![Stars](https://img.shields.io/github/stars/ADolkun/CodeCycle)](https://github.com/ADolkun/CodeCycle/stargazers)
+[![Users](https://img.shields.io/chrome-web-store/users/lmjangoiaeocnlehffdlidjockaohhjj)](https://chrome.google.com/webstore/detail/codecycle/lmjangoiaeocnlehffdlidjockaohhjj)
 
-<!-- [![Users](https://img.shields.io/chrome-web-store/users/lmjangoiaeocnlehffdlidjockaohhjj?label=Chrome%20Web%20Store%20Users)](https://chrome.google.com/webstore/detail/lmjangoiaeocnlehffdlidjockaohhjj) -->
+</div>
 
 # Get Started
 
