@@ -10,23 +10,20 @@
 </h2>
 
 <div align="center">
-  <a href="https://chrome.google.com/webstore/detail/codecycle/nojegmfgpgdicmogicikihalccihhkid">
+  <a href="https://chrome.google.com/webstore/detail/codecycle/lmjangoiaeocnlehffdlidjockaohhjj">
     <img align="center" src="https://github.com/ADolkun/CodeCycle/assets/90407167/89482e5f-d9f4-4d30-8bd5-bbe291670dd1" />
   </a>
 </div>
 <div align="center">
-🔗<a href="https://chrome.google.com/webstore/detail/codecycle/nojegmfgpgdicmogicikihalccihhkid">Get CodeCycle from Chrome Web Store</a>
+🔗<a href="https://chromewebstore.google.com/detail/codecycle/lmjangoiaeocnlehffdlidjockaohhjj">Get CodeCycle from Chrome Web Store</a>
 </div>
 
 <br>
 
-<div align="center">
+[![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/ADolkun/CodeCycle/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/ADolkun/CodeCycle)](https://github.com/ADolkun/CodeCycle/stargazers)
 
-[`<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license"/>`](https://github.com/ADolkun/CodeCycle/blob/main/LICENSE)
-![Stars](https://img.shields.io/github/stars/ADolkun/CodeCycle)
-`<img src="https://img.shields.io/chrome-web-store/d/nojegmfgpgdicmogicikihalccihhkid.svg" alt="users">`
-
-</div>
+<!-- [![Users](https://img.shields.io/chrome-web-store/users/lmjangoiaeocnlehffdlidjockaohhjj?label=Chrome%20Web%20Store%20Users)](https://chrome.google.com/webstore/detail/lmjangoiaeocnlehffdlidjockaohhjj) -->
 
 # Get Started
 
@@ -44,5 +41,4 @@
 - ✅ ~~support sync data across devices~~
 - ✅ ~~support tracking submission by `ctrl` + `Enter`(Linux / Windows), "Command" + `Enter` (MacOS) in the "Dynamic Layout"~~
 - ✅ support importing previous submission records
-- 🔲 inject a button in the LeetCode nav bar
 - 🔲 support customized configuration of review intervals
