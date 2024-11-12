@@ -1,16 +1,46 @@
 # Changelog
 
-## [0.9.9] - 2024-10-28
+All notable changes to CodeCycle will be documented in this file.
 
-### Added
-
-- Support for keyboard shortcuts to submit solutions:
-  - Windows/Linux: Ctrl + Enter
-  - MacOS: Command + Enter
+## [0.9.9.5] - 2024-11-11
 
 ### Changed
 
-- Updated submission detection logic to handle both button clicks and keyboard shortcuts
-- Improved event listener registration for better reliability
+- UI makeover & UX improvements
+  - Remade the entire UI to a more modern and light version
+  - Improved table layout with optimized column widths
+  - Enhanced problem name display with hover effect
+  - Adjusted footer layout for better spacing
+- Reorganized CSS code structure
 
-## [0.9.8] - Previous version
+## [0.9.9.1] - 2024-10-28
+
+### Added
+
+- Import/Export functionality for progress data
+  - Added Export Progress button to download current progress as JSON
+  - Added Import Progress button to load progress from JSON file
+  - Added validation for imported data
+  - Added confirmation dialog before import to prevent accidental data loss
+- Fixed review time calculation to use calendar days instead of exact time
+  - Questions now appear in Review Due section at the start of the review day
+  - More intuitive review scheduling
+
+### Changed
+
+- Updated UI with new import/export buttons in options page
+- Improved error handling and user feedback for import/export operations
+
+## [0.9.9] - 2024-10-26
+
+### Added
+
+- Support for tracking submissions via Ctrl+Enter (Windows/Linux) or Cmd+Enter (MacOS)
+- Cloud sync functionality for sharing progress across devices
+- Paging support for better organization of problem lists
+- Support for new LeetCode UI version
+
+### Changed
+
+- Refactored with webpack for better scalability
+- Updated UI with modern design elements

@@ -7,57 +7,123 @@ td {
 }
 
 .custom-switch:focus {
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 5px 2px bisque;
+  border-color: rgba(64, 224, 208, 0.2);
+  box-shadow: 0 0 5px 2px #33b3a6;
 }
 
 .custom-switch:checked {
-  border-color: rgba(255, 255, 255, 0.2);
-  background-color: chocolate;
-  box-shadow: 0 0 5px 2px bisque;
+  border-color: rgba(64, 224, 208, 0.2);
+  background-color: #33b3a6;
+  box-shadow: 0 0 5px 2px #33b3a6;
 }
 
-iframe {
-  overflow: hidden;
-  border: 0;
+body {
+  width: 500px;
+  min-height: fit-content;
+  position: relative;
+  padding-bottom: 20px;
+  background-color: #f5f5f5 !important;
 }
 
 .custom-btn {
-  border-color: chocolate;
-  color: chocolate;
+  border-color: #33b3a6;
+  color: #001f3f;
 }
 
 .custom-btn:hover {
-  border-color: rgba(235, 173, 129, 1);
-  background-color: rgba(235, 173, 129, 1);
+  border-color: #5b975b;
+  background-color: #5b975b;
+  color: #001f3f;
 }
 
 .custom-btn:disabled {
-  border-color: rgba(70, 70, 70, 0.5);
-  color: rgb(70, 70, 70, 0.5);
+  border-color: rgba(0, 31, 63, 0.5);
+  color: rgba(0, 31, 63, 0.5);
 }
 
 .multifont {
   font-family: "Courier Prime", "Noto Sans SC", sans-serif;
+  color: #001f3f;
 }
 
 a {
-  color: chocolate;
+  color: #33b3a6;
 }
 
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bd-violet-bg);
-  --bs-tooltip-color: var(--bs-white);
+a:hover {
+  color: #5b975b;
 }
 
 .import-export-btn {
   margin: 5px;
   background-color: transparent;
-  border: 1px solid chocolate;
-  color: chocolate;
+  border: 1px solid #33b3a6;
+  color: #001f3f;
 }
 
 .import-export-btn:hover {
-  background-color: chocolate;
-  color: white;
+  background-color: #33b3a6;
+  color: #f5f5f5;
+}
+
+.table-container {
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-sm {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table th:nth-child(1) {
+  width: 35%;
+}
+
+.table th:nth-child(2) {
+  width: 15%;
+}
+
+.table th:nth-child(3) {
+  width: 10%;
+}
+
+.table th:nth-child(4) {
+  width: 12%;
+}
+
+.table th:nth-child(5) {
+  width: 13%;
+}
+
+.problem-full-name {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.problem-full-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -20,7 +20,7 @@ build/
 *.pem
 *.crx
 *.dev.*
-pmca
+codecycle.zip
 
 # Environment variables
 .env

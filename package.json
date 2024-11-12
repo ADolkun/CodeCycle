@@ -1,6 +1,6 @@
 {
-  "name": "pmca",
-  "version": "0.9.9",
+  "name": "codecycle",
+  "version": "0.9.9.5",
   "description": "<h1 align=\"center\">\r   <img src=\"assets/logo2.png\" style=\"width: 10%;\" />\r   <br>\r     <B>P</B>ractice <B>M</B>akes <B>C</B>ode <B>A</B>ccepted\r   <br>\r </h1>",
   "main": "src/popup.js",
   "directories": {
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HaolinZhong/PMCA.git"
+    "url": "git+https://github.com/ADolkun/CodeCycle.git"
   },
   "keywords": [],
-  "author": "Haolin Zhong",
+  "author": "Albert Dolkun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HaolinZhong/PMCA/issues"
+    "url": "https://github.com/ADolkun/CodeCycle/issues"
   },
-  "homepage": "https://github.com/HaolinZhong/PMCA#readme",
+  "homepage": "https://github.com/ADolkun/CodeCycle#readme",
   "dependencies": {
     "archiver": "^6.0.1",
     "css-loader": "^6.8.1",

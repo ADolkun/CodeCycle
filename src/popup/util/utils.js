@@ -17,26 +17,25 @@ import {
   forggettingCurve,
 } from "./constants";
 
-export const stripTime = (timestamp) => {
-  const date = new Date(timestamp);
-  date.setHours(0, 0, 0, 0);
-  return date.getTime();
-};
-
 export const needReview = (problem) => {
   if (problem.proficiency >= forggettingCurve.length) {
     return false;
   }
 
-  const currentDate = stripTime(Date.now());
-  const submissionDate = stripTime(problem.submissionTime);
-  const reviewIntervalInDays =
-    forggettingCurve[problem.proficiency] / (24 * 60);
-  const reviewDate = stripTime(
-    submissionDate + reviewIntervalInDays * 24 * 60 * 60 * 1000
-  );
+  const currentDate = new Date();
+  const submissionDate = new Date(problem.submissionTime);
 
-  return currentDate >= reviewDate;
+  // Reset time portions to compare just the dates
+  currentDate.setHours(0, 0, 0, 0);
+  submissionDate.setHours(0, 0, 0, 0);
+
+  // Calculate days difference
+  const timeDiffInDays = (currentDate - submissionDate) / (1000 * 60 * 60 * 24);
+
+  // Convert forgetting curve minutes to days
+  const reviewDays = forggettingCurve[problem.proficiency] / (24 * 60);
+
+  return timeDiffInDays >= reviewDays;
 };
 
 export const scheduledReview = (problem) => {
@@ -54,19 +53,21 @@ export const calculatePageNum = (problems) => {
 export const decorateProblemLevel = (level) => {
   let color;
   if (level === "Easy") {
-    color = "rgb(67, 160, 71)";
+    color = "#5b975b";
   } else if (level === "Medium") {
-    color = "rgb(239, 108, 0)";
+    color = "#33b3a6";
   } else {
-    color = "rgb(233, 30, 99)";
+    color = "#001F3F";
   }
   return `<small style="color: ${color}; vertical-align: middle">${level}</small>`;
 };
 
 export const getNextReviewTime = (problem) => {
-  return new Date(
-    problem.submissionTime + forggettingCurve[problem.proficiency] * 60 * 1000
-  );
+  const reviewDate = new Date(problem.submissionTime);
+  const reviewDays = forggettingCurve[problem.proficiency] / (24 * 60);
+  reviewDate.setDate(reviewDate.getDate() + Math.floor(reviewDays));
+  reviewDate.setHours(0, 0, 0, 0);
+  return reviewDate;
 };
 
 export const getDelayedHours = (problem) => {

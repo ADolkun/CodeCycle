@@ -5,7 +5,7 @@ const os = require("os");
 
 // Replace with your actual extension ID path
 const DB_PATH =
-  "/home/albert/snap/chromium/common/chromium/Profile 1/Local Extension Settings/[EXTENSION_ID]";
+  "/home/albert/snap/chromium/common/chromium/Profile 1/Local Extension Settings/Settings/gnbiiokgijdpfffgdnlblfiahacfpeej";
 
 async function extractData() {
   const db = new Level(DB_PATH, { valueEncoding: "json" });
@@ -37,7 +37,7 @@ async function extractData() {
 
     // Save to Downloads folder
     const downloadsPath = path.join(os.homedir(), "Downloads");
-    const fileName = `pmca-backup-${
+    const fileName = `CodeCycle-backup-${
       new Date().toISOString().split("T")[0]
     }.json`;
     const outputPath = path.join(downloadsPath, fileName);
