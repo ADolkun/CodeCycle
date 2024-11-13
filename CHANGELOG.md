@@ -2,7 +2,7 @@
 
 All notable changes to CodeCycle will be documented in this file.
 
-## [0.9.9.5.1] - 2024-11-12
+## [0.9.9.6] - 2024-11-12
 
 ### Changed
 

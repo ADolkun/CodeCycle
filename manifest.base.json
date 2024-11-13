@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CodeCycle",
-  "version": "0.9.9.5",
+  "version": "0.9.9.6",
   "author": "Albert Dolkun",
   "description": "Inspired by PMCA(Haolin Zhong). CodeCycle tracks LeetCode progress and prompt you to review based on Ebbinghaus's Forgetting Curve",
   "homepage_url": "https://github.com/ADolkun/CodeCycle",
