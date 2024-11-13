@@ -1,4 +1,4 @@
-import { getDelayedHours, getNextReviewTime } from "./utils";
+import { getDelayedDays, getNextReviewTime } from "./utils";
 
 const reverse = (sorter) => {
   return (p1, p2) => -sorter(p1, p2);
@@ -9,7 +9,7 @@ const problemReviewTimeComparator = (p1, p2) => {
 };
 
 const problemDelayTimeComparator = (p1, p2) => {
-  return getDelayedHours(p2).valueOf() - getDelayedHours(p1).valueOf();
+  return getDelayedDays(p2).valueOf() - getDelayedDays(p1).valueOf();
 };
 
 // functions used to sort problems
