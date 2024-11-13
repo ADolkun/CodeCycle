@@ -2,6 +2,19 @@
 
 All notable changes to CodeCycle will be documented in this file.
 
+## [0.9.9.5.1] - 2024-11-12
+
+### Changed
+
+- Fixed table container height to maintain consistent pagination position
+- Improved delay time calculation logic to show only days instead of hours
+- Removed unnecessary scrollbar from table container
+
+### Fixed
+
+- UI consistency issue where pagination controls would move up with fewer items
+- Table layout maintains consistent height regardless of content amount
+
 ## [0.9.9.5] - 2024-11-11
 
 ### Changed

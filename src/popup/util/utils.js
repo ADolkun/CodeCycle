@@ -70,9 +70,9 @@ export const getNextReviewTime = (problem) => {
   return reviewDate;
 };
 
-export const getDelayedHours = (problem) => {
+export const getDelayedDays = (problem) => {
   const nextReviewDate = getNextReviewTime(problem);
-  return Math.round((Date.now() - nextReviewDate) / (60 * 60 * 1000));
+  return Math.round((Date.now() - nextReviewDate) / (24 * 60 * 60 * 1000));
 };
 
 export const getDifficultyBasedSteps = (diffculty) => {

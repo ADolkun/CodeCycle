@@ -25,7 +25,7 @@ import {
 import {
   calculatePageNum,
   decorateProblemLevel,
-  getDelayedHours,
+  getDelayedDays,
   getNextReviewTime,
   isCompleted,
   needReview,
@@ -87,7 +87,7 @@ const createReviewProblemRecord = (problem) => {
         ${getProblemUrlCell(problem)}\
         ${getProblemProgressBarCell(problem)}\
         ${getProblemLevelCell(problem)}\
-        <td><small>${getDelayedHours(problem)} hour(s)</small></td>\
+        <td><small>${getDelayedDays(problem)} days</small></td>\
         <td style="text-align: center; vertical-align:middle">\
             ${getCheckButtonTag(problem)}\
             ${getResetButtonTag(problem)}\
