@@ -1,10 +1,11 @@
 ---
 name: Bug report
 about: Create a report to help us improve CodeCycle
-title: '[BUG] '
+title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: ""
 ---
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -25,7 +26,7 @@ If applicable, add screenshots to help explain your problem.
 
 - OS: [e.g. Windows, MacOS]
 - Browser: [e.g. Chrome, Edge]
-- CodeCycle Version: [e.g. 0.9.9.61]
+- CodeCycle Version: [e.g. 0.9.9.62]
 
 **Additional context**
 Add any other context about the problem here.

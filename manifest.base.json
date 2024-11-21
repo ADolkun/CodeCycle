@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CodeCycle",
-  "version": "0.9.9.61",
+  "version": "0.9.9.62",
   "author": "Albert Dolkun",
   "description": "CodeCycle helps master LeetCode problems through repetition based on Ebbinghaus's Forgetting Curve. Built upon PMCA by Haolin Zhong.",
   "homepage_url": "https://github.com/ADolkun/CodeCycle",
