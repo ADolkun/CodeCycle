@@ -49,11 +49,3 @@ All notable changes to CodeCycle will be documented in this file.
 ### Added
 
 - Support for tracking submissions via Ctrl+Enter (Windows/Linux) or Cmd+Enter (MacOS)
-- Cloud sync functionality for sharing progress across devices
-- Paging support for better organization of problem lists
-- Support for new LeetCode UI version
-
-### Changed
-
-- Refactored with webpack for better scalability
-- Updated UI with modern design elements

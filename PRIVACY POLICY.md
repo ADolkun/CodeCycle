@@ -12,8 +12,10 @@ Welcome to CodeCycle! This privacy policy is designed to help you understand how
 
 2. **Data Security**
 
-- All collected data are stored locally.
-- In the future, the data might be synchronized over your google account, so you can browse problem submission records and review times across devices. CodeCycle does not upload the data to any third-party servers.
+- All problem progress data is stored locally by default
+- Optional cloud sync feature uses Chrome's built-in sync storage for cross-device functionality
+- No third-party servers are used for data storage
+- Import/Export functionality allows manual backup and transfer of your progress data
 
 3. **Privacy Policy Updates**
 

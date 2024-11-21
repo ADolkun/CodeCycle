@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "CodeCycle",
-  "version": "0.9.9.6",
+  "version": "0.9.9.61",
   "author": "Albert Dolkun",
-  "description": "Inspired by PMCA(Haolin Zhong). CodeCycle tracks LeetCode progress and prompt you to review based on Ebbinghaus's Forgetting Curve",
+  "description": "CodeCycle helps master LeetCode problems through repetition based on Ebbinghaus's Forgetting Curve. Built upon PMCA by Haolin Zhong.",
   "homepage_url": "https://github.com/ADolkun/CodeCycle",
   "options_ui": {
     "page": "options.html",
@@ -27,13 +27,21 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/*"],
-      "js": ["dist/leetcode.js"],
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+      "js": [
+        "dist/leetcode.js"
+      ],
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://leetcode.cn/*"],
-      "js": ["dist/leetcodecn.js"],
+      "matches": [
+        "https://leetcode.cn/*"
+      ],
+      "js": [
+        "dist/leetcodecn.js"
+      ],
       "run_at": "document_idle"
     }
   ]
