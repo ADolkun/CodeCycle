@@ -1,6 +1,6 @@
 {
   "name": "codecycle",
-  "version": "0.9.9.6",
+  "version": "0.9.9.61",
   "description": "<h1 align=\"center\">\r   <img src=\"assets/logo2.png\" style=\"width: 10%;\" />\r   <br>\r     <B>P</B>ractice <B>M</B>akes <B>C</B>ode <B>A</B>ccepted\r   <br>\r </h1>",
   "main": "src/popup.js",
   "directories": {
@@ -21,9 +21,17 @@
     "type": "git",
     "url": "git+https://github.com/ADolkun/CodeCycle.git"
   },
-  "keywords": [],
+  "keywords": [
+    "leetcode",
+    "spaced-repetition",
+    "coding-practice",
+    "interview-prep",
+    "learning",
+    "chrome-extension",
+    "ebbinghaus"
+  ],
   "author": "Albert Dolkun",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ADolkun/CodeCycle/issues"
   },

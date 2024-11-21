@@ -45,3 +45,24 @@
 - ✅ ~~support tracking submission by `ctrl` + `Enter`(Linux / Windows), "Command" + `Enter` (MacOS) in the "Dynamic Layout"~~
 - ✅ support importing previous submission records
 - 🔲 support customized configuration of review intervals
+- 🔲 support neetcode.io
+
+# Features
+
+- Track LeetCode submissions and schedule reviews based on Ebbinghaus's Forgetting Curve
+- Support for both LeetCode Global and CN sites
+- Import/Export or cloud sync functionality for progress data
+- Keyboard shortcuts for submission (Ctrl/Cmd + Enter)
+- Modern, clean UI with intuitive problem management
+
+# Acknowledgments
+
+This project is built upon [PMCA](https://github.com/HaolinZhong/PMCA) by Haolin Zhong. CodeCycle extends PMCA's functionality with additional features including:
+
+- Progress import/export functionality
+- Modern UI/UX with improved usability
+- Enhanced submission tracking
+- Cross-platform keyboard shortcuts
+- Improved review scheduling logic
+
+Special thanks to Haolin Zhong for the original PMCA project.
