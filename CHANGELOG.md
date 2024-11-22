@@ -2,6 +2,23 @@
 
 All notable changes to CodeCycle will be documented in this file.
 
+## [0.9.9.63] - 2024-11-21
+
+### Fixed
+- Improved submission tracking reliability with retry mechanism
+- Added fallback systems for editor element detection
+- Enhanced compatibility with other extensions
+
+### Changed
+- Standardized logging format across all files
+- Improved debug output and error handling
+- Enhanced event listener management
+
+### Technical
+- Added MutationObserver for dynamic content handling
+- Implemented retry mechanism for editor element detection
+- Improved cleanup of event listeners
+
 ## [0.9.9.62] - 2024-11-21
 
 ### Changed
