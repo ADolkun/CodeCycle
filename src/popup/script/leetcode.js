@@ -1,13 +1,16 @@
 import { loadConfigs } from "../service/configService";
 import { registerSubmissionListeners } from "./submission";
 
-console.log("Initializing CodeCycle...");
+console.log("CodeCycle: Initializing...");
 
 // Wait for DOM to be ready
 const initialize = async () => {
   await loadConfigs();
-  registerSubmissionListeners();
-  console.log("CodeCycle initialized!");
+  // Add a small delay to ensure the page has loaded
+  setTimeout(() => {
+    registerSubmissionListeners();
+    console.log("CodeCycle: Initialization complete");
+  }, 1000);
 };
 
 // Run initialization when DOM is loaded

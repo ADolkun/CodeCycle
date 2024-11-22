@@ -1,7 +1,8 @@
 import { loadConfigs } from "../service/configService";
 import { registerSubmissionListeners } from "./submission";
 
-console.log(`Hello CodeCycle!`);
+console.log("CodeCycle: Initializing...");
 
 await loadConfigs();
 registerSubmissionListeners();
+console.log("CodeCycle: Initialization complete");
